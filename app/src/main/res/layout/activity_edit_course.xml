@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/liu">
+
+    <!-- 课程名称行 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+        <!-- 课程名称说明 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程名称："
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical" />
+        <!-- 课程名称输入框 -->
+        <EditText
+            android:id="@+id/etCourseName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入课程名称"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- 教室行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+        <!-- 教室说明 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="教室："
+            android:textSize="16sp" />
+        <!-- 教室输入框 -->
+        <EditText
+            android:id="@+id/etClassroom"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入教室名称"
+
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- 选择颜色 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="选择颜色：" />
+
+        <Spinner
+            android:id="@+id/spinnerColorOptions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            />
+    </LinearLayout>
+    <!-- 确定按钮 -->
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <!-- 删除按钮 -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_delete"
+        android:text="删除课程" />
+
+
+</LinearLayout>

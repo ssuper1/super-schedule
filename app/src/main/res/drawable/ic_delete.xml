@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/ic_delete.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+<path
+    android:fillColor="#F2EAEA"
+android:pathData="M16,9V7H8v2H6v12h12V9h-2zM8,3h8v2H8V3z" />
+    </vector>

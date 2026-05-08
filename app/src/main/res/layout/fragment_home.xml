@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragment.HomeFragment"
+    android:background="@drawable/cheng">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            >
+            <!-- 第一行：显示星期一到星期五 -->
+            <TextView
+                android:id="@+id/tvMon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="周一"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvTue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="周二"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvWed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="周三"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvThu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="周四"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvFri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="周五"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvSat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="周六"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvSun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="周日"
+                android:layout_weight="1"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!-- 上半部分，占 70% -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--height="0dp"并不是指视图的高度为0，而是指视图的高度将由weight="9.2来动态分配-->
+
+            <!-- 课表网格布局 -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:columnCount="7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rowCount="6"
+                >
+
+
+                <!-- 第二行到第六行：表示每节课 -->
+                --
+
+                <Button
+                    android:id="@+id/btnMon1"
+                    style="@style/CommonButtonStyle"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnTue1"
+                    style="@style/CommonButtonStyle"
+
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnWed1"
+                    style="@style/CommonButtonStyle"
+
+                    app:layout_column="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnThu1"
+                    style="@style/CommonButtonStyle"
+
+
+
+                    app:layout_column="3"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnFri1"
+                    style="@style/CommonButtonStyle"
+
+
+
+                    app:layout_column="4"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSat1"
+                    style="@style/CommonButtonStyle"
+                    android:visibility="gone"
+                    app:layout_column="5"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSun1"
+                    style="@style/CommonButtonStyle"
+                    android:visibility="gone"
+                    app:layout_column="6"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <!-- 继续定义其他节课（第二节到第五节），可以通过类似方式进行布局 -->
+                <!-- 第二行到第六行：表示每节课 -->
+                <Button
+                    android:id="@+id/btnMon2"
+                    style="@style/CommonButtonStyle"
+
+
+
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="2"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnTue2"
+                    style="@style/CommonButtonStyle"
+
+
+
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="2"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnWed2"
+                    style="@style/CommonButtonStyle"
+
+
+
+                    app:layout_column="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="2"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnThu2"
+                    style="@style/CommonButtonStyle"
+
+
+
+                    app:layout_column="3"
+                    app:layout_columnWeight="1"
+                    app:layout_row="2"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnFri2"
+                    style="@style/CommonButtonStyle"
+
+
+
+                    app:layout_column="4"
+                    app:layout_columnWeight="1"
+                    app:layout_row="2"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSat2"
+                    style="@style/CommonButtonStyle"
+
+                    android:visibility="gone"
+                    app:layout_column="5"
+                    app:layout_columnWeight="1"
+                    app:layout_row="2"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSun2"
+                    style="@style/CommonButtonStyle"
+
+                    android:visibility="gone"
+                    app:layout_column="6"
+                    app:layout_columnWeight="1"
+                    app:layout_row="2"
+                    app:layout_rowWeight="1" />
+                <!-- 分割线 -->
+
+                <!--第三行-->
+                <Button
+                    android:id="@+id/btnMon3"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="3"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnTue3"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="3"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnWed3"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+
+                    app:layout_column="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="3"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnThu3"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+
+                    app:layout_column="3"
+                    app:layout_columnWeight="1"
+                    app:layout_row="3"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnFri3"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+
+                    app:layout_column="4"
+
+                    app:layout_columnWeight="1"
+                    app:layout_row="3"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSat3"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:layout_column="5"
+                    app:layout_columnWeight="1"
+                    app:layout_row="3"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSun3"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:layout_column="6"
+                    app:layout_columnWeight="1"
+                    app:layout_row="3"
+                    app:layout_rowWeight="1" />
+
+                <!--四-->
+                <Button
+                    android:id="@+id/btnMon4"
+                    style="@style/CommonButtonStyle"
+
+
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="4"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnTue4"
+                    style="@style/CommonButtonStyle"
+
+
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="4"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnWed4"
+                    style="@style/CommonButtonStyle"
+
+
+                    app:layout_column="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="4"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnThu4"
+                    style="@style/CommonButtonStyle"
+
+
+                    app:layout_column="3"
+                    app:layout_columnWeight="1"
+                    app:layout_row="4"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnFri4"
+                    style="@style/CommonButtonStyle"
+
+
+                    app:layout_column="4"
+                    app:layout_columnWeight="1"
+                    app:layout_row="4"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSat4"
+                    style="@style/CommonButtonStyle"
+
+                    android:visibility="gone"
+                    app:layout_column="5"
+                    app:layout_columnWeight="1"
+                    app:layout_row="4"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSun4"
+                    style="@style/CommonButtonStyle"
+
+                    android:visibility="gone"
+                    app:layout_column="6"
+                    app:layout_columnWeight="1"
+                    app:layout_row="4"
+                    app:layout_rowWeight="1" />
+
+
+                <!--5-->
+                <Button
+                    android:id="@+id/btnMon5"
+                    style="@style/CommonButtonStyle"
+
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="5"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnTue5"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+
+                    android:visibility="gone"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="5"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnWed5"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+
+                    android:visibility="gone"
+                    app:layout_column="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="5"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnThu5"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+
+                    android:visibility="gone"
+                    app:layout_column="3"
+                    app:layout_columnWeight="1"
+                    app:layout_row="5"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnFri5"
+                    style="@style/CommonButtonStyle"
+
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:layout_column="4"
+                    app:layout_columnWeight="1"
+                    app:layout_row="5"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSat5"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:layout_column="5"
+                    app:layout_columnWeight="1"
+                    app:layout_row="5"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnSun5"
+                    style="@style/CommonButtonStyle"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:layout_column="6"
+                    app:layout_columnWeight="1"
+                    app:layout_row="5"
+                    app:layout_rowWeight="1" />
+            </androidx.gridlayout.widget.GridLayout>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

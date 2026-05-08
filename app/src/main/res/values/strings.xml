@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">super课表</string>
+
+    <string name="schedule">课表</string>
+    <string name="settings">设置</string>
+    <string name="undo">作业</string>
+
+    <string-array name="color_options">
+        <item>默认</item>
+        <item>粉色</item>
+        <item>淡黄</item>
+        <item>蓝色</item>
+        <item>绿色</item>
+        <item>白色</item>
+        <item>橙色</item>
+        <item>青色</item>
+        <item>紫色</item>
+    </string-array>
+</resources>

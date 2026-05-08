@@ -1,0 +1,9 @@
+<!-- res/xml/course_widget_info.xml -->
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="90dp"
+    android:minHeight="90dp"
+    android:maxWidth="300dp"
+    android:maxHeight="500dp"
+    android:resizeMode="horizontal|vertical"
+    android:initialLayout="@layout/widget_course_layout" />

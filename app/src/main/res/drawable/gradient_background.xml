@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:type="linear"
+        android:startColor="#7583B2"
+        android:endColor="#4D5377"
+        />
+    <corners
+        android:radius="10dp"/> <!-- 设置圆角的半径 -->
+</shape>
+    <!--7583B2-->
